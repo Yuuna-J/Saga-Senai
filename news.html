@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias - Guardiãs das Águas</title>
+    <meta name="description" content="Acompanhe as últimas notícias, eventos e atualizações do projeto Guardiãs das Águas e suas ações de educação ambiental.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" role="banner">
+        <nav class="navbar" role="navigation" aria-label="Menu principal">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <img src="assets/logo.svg" alt="Logo Guardiãs das Águas" class="logo">
+                    <h1 class="brand-name">Guardiãs das Águas</h1>
+                </div>
+                
+                <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+                    <span class="hamburger"></span>
+                </button>
+                
+                <ul class="nav-menu" role="menubar">
+                    <li class="nav-item" role="none">
+                        <a href="index.html" class="nav-link" role="menuitem">Início</a>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <a href="about.html" class="nav-link" role="menuitem">Sobre</a>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <a href="projects.html" class="nav-link" role="menuitem">Projetos</a>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <a href="materials.html" class="nav-link" role="menuitem">Materiais</a>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <a href="quiz.html" class="nav-link quiz-link" role="menuitem">
+                            <i class="bi bi-controller" aria-hidden="true"></i>
+                            Quiz Educativo
+                        </a>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <a href="contact.html" class="nav-link" role="menuitem">Contato</a>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <a href="news.html" class="nav-link active" role="menuitem">Notícias</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header" aria-labelledby="page-title">
+            <div class="container">
+                <h1 id="page-title">Notícias e Atualizações</h1>
+                <p class="page-description">Acompanhe as últimas novidades, eventos e conquistas do projeto Guardiãs das Águas</p>
+            </div>
+        </section>
+
+        <!-- Featured News -->
+        <section class="featured-news" aria-labelledby="featured-title">
+            <div class="container">
+                <h2 id="featured-title" class="section-title">Destaque</h2>
+                <article class="featured-article">
+                    <div class="featured-content">
+                        <div class="featured-meta">
+                            <span class="news-date">
+                                <i class="bi bi-calendar3" aria-hidden="true"></i>
+                                22 de Janeiro, 2025
+                            </span>
+                            <span class="news-category">Lançamento</span>
+                        </div>
+                        <h3>Lançamento da Plataforma Digital Educativa</h3>
+                        <p>O projeto Guardiãs das Águas apresenta sua nova plataforma digital interativa, desenvolvida para ampliar o alcance da educação ambiental sobre recursos hídricos e saneamento básico em todo o Brasil.</p>
+                        <div class="featured-highlights">
+                            <div class="highlight-item">
+                                <i class="bi bi-controller" aria-hidden="true"></i>
+                                <span>Quiz educativo interativo</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="bi bi-file-earmark-text" aria-hidden="true"></i>
+                                <span>Materiais didáticos gratuitos</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="bi bi-people" aria-hidden="true"></i>
+                                <span>Projetos das 6 cidades</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-outline" onclick="openNewsModal('plataforma-digital')">Ler mais</a>
+                    </div>
+                    <div class="featured-image">
+                        <img src="assets/water-drop.svg" alt="Ilustração representando a nova plataforma digital" class="news-illustration">
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- News Categories -->
+        <section class="news-categories" aria-labelledby="categories-title">
+            <div class="container">
+                <h2 id="categories-title" class="sr-only">Categorias de notícias</h2>
+                <div class="categories-nav">
+                    <button class="category-filter active" data-category="todas" aria-pressed="true">
+                        <i class="bi bi-grid-3x3-gap-fill" aria-hidden="true"></i>
+                        Todas as Notícias
+                    </button>
+                    <button class="category-filter" data-category="eventos" aria-pressed="false">
+                        <i class="bi bi-calendar-event" aria-hidden="true"></i>
+                        Eventos
+                    </button>
+                    <button class="category-filter" data-category="projetos" aria-pressed="false">
+                        <i class="bi bi-lightbulb" aria-hidden="true"></i>
+                        Projetos
+                    </button>
+                    <button class="category-filter" data-category="educacao" aria-pressed="false">
+                        <i class="bi bi-book" aria-hidden="true"></i>
+                        Educação
+                    </button>
+                    <button class="category-filter" data-category="parceiros" aria-pressed="false">
+                        <i class="bi bi-handshake" aria-hidden="true"></i>
+                        Parcerias
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- News Grid -->
+        <section class="news-grid-section" aria-labelledby="news-list-title">
+            <div class="container">
+                <h2 id="news-list-title" class="sr-only">Lista de notícias</h2>
+                <div class="news-grid">
+                    
+                    <!-- Event News -->
+                    <article class="news-card" data-category="eventos">
+                        <div class="news-header">
+                            <div class="news-date">
+                                <span class="date-day">20</span>
+                                <span class="date-month">JAN</span>
+                            </div>
+                            <span class="news-badge event-badge">Evento</span>
+                        </div>
+                        <div class="news-content">
+                            <h3>Workshop de Tecnologias Sociais em Uberlândia</h3>
+                            <p>Realização de workshop sobre tecnologias sociais para tratamento de água com participação das alunas de todas as regiões do projeto.</p>
+                            <div class="news-meta">
+                                <span class="news-location">
+                                    <i class="bi bi-geo-alt" aria-hidden="true"></i>
+                                    UFU - Uberlândia/MG
+                                </span>
+                                <span class="news-duration">
+                                    <i class="bi bi-clock" aria-hidden="true"></i>
+                                    8h às 17h
+                                </span>
+                            </div>
+                        </div>
+                        <div class="news-actions">
+                            <button class="btn btn-outline btn-sm" onclick="openNewsModal('workshop-tecnologias')">
+                                Saiba mais
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Project News -->
+                    <article class="news-card" data-category="projetos">
+                        <div class="news-header">
+                            <div class="news-date">
+                                <span class="date-day">18</span>
+                                <span class="date-month">JAN</span>
+                            </div>
+                            <span class="news-badge project-badge">Projeto</span>
+                        </div>
+                        <div class="news-content">
+                            <h3>Sistema de Monitoramento em Aracaju Entra em Operação</h3>
+                            <p>O projeto de monitoramento da qualidade das águas costeiras desenvolvido pela equipe de Aracaju iniciou sua fase operacional.</p>
+                            <div class="news-meta">
+                                <span class="news-location">
+                                    <i class="bi bi-geo-alt" aria-hidden="true"></i>
+                                    Aracaju/SE
+                                </span>
+                                <span class="news-impact">
+                                    <i class="bi bi-people" aria-hidden="true"></i>
+                                    500+ beneficiados
+                                </span>
+                            </div>
+                        </div>
+                        <div class="news-actions">
+                            <button class="btn btn-outline btn-sm" onclick="openNewsModal('monitoramento-aracaju')">
+                                Saiba mais
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Education News -->
+                    <article class="news-card" data-category="educacao">
+                        <div class="news-header">
+                            <div class="news-date">
+                                <span class="date-day">15</span>
+                                <span class="date-month">JAN</span>
+                            </div>
+                            <span class="news-badge education-badge">Educação</span>
+                        </div>
+                        <div class="news-content">
+                            <h3>Novos Materiais Educativos Disponibilizados</h3>
+                            <p>Lançamento de cartilha sobre tecnologias sociais e guia de atividades para educadores trabalharem sustentabilidade em sala de aula.</p>
+                            <div class="news-meta">
+                                <span class="news-downloads">
+                                    <i class="bi bi-download" aria-hidden="true"></i>
+                                    Downloads gratuitos
+                                </span>
+                                <span class="news-target">
+                                    <i class="bi bi-people" aria-hidden="true"></i>
+                                    Educadores e estudantes
+                                </span>
+                            </div>
+                        </div>
+                        <div class="news-actions">
+                            <a href="materials.html" class="btn btn-primary btn-sm">
+                                Ver materiais
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Partnership News -->
+                    <article class="news-card" data-category="parceiros">
+                        <div class="news-header">
+                            <div class="news-date">
+                                <span class="date-day">12</span>
+                                <span class="date-month">JAN</span>
+                            </div>
+                            <span class="news-badge partnership-badge">Parceria</span>
+                        </div>
+                        <div class="news-content">
+                            <h3>Expansão para Novas Instituições de Ensino</h3>
+                            <p>Assinatura de convênios com instituições de ensino das seis cidades participantes para ampliar o alcance das ações educativas.</p>
+                            <div class="news-meta">
+                                <span class="news-institutions">
+                                    <i class="bi bi-building" aria-hidden="true"></i>
+                                    12 novas instituições
+                                </span>
+                                <span class="news-coverage">
+                                    <i class="bi bi-geo" aria-hidden="true"></i>
+                                    6 estados brasileiros
+                                </span>
+                            </div>
+                        </div>
+                        <div class="news-actions">
+                            <button class="btn btn-outline btn-sm" onclick="openNewsModal('expansao-instituicoes')">
+                                Saiba mais
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Event News 2 -->
+                    <article class="news-card" data-category="eventos">
+                        <div class="news-header">
+                            <div class="news-date">
+                                <span class="date-day">10</span>
+                                <span class="date-month">JAN</span>
+                            </div>
+                            <span class="news-badge event-badge">Evento</span>
+                        </div>
+                        <div class="news-content">
+                            <h3>I Encontro Nacional das Guardiãs das Águas</h3>
+                            <p>Primeiro encontro nacional reuniu alunas, educadores e coordenadores de todas as cidades participantes do projeto.</p>
+                            <div class="news-meta">
+                                <span class="news-participants">
+                                    <i class="bi bi-people" aria-hidden="true"></i>
+                                    120 participantes
+                                </span>
+                                <span class="news-format">
+                                    <i class="bi bi-camera-video" aria-hidden="true"></i>
+                                    Formato híbrido
+                                </span>
+                            </div>
+                        </div>
+                        <div class="news-actions">
+                            <button class="btn btn-outline btn-sm" onclick="openNewsModal('encontro-nacional')">
+                                Saiba mais
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Project News 2 -->
+                    <article class="news-card" data-category="projetos">
+                        <div class="news-header">
+                            <div class="news-date">
+                                <span class="date-day">08</span>
+                                <span class="date-month">JAN</span>
+                            </div>
+                            <span class="news-badge project-badge">Projeto</span>
+                        </div>
+                        <div class="news-content">
+                            <h3>Jardins de Chuva Implantados em Uberlândia</h3>
+                            <p>Finalizada a implementação de jardins de chuva em três escolas públicas de Uberlândia como parte do projeto de drenagem sustentável.</p>
+                            <div class="news-meta">
+                                <span class="news-schools">
+                                    <i class="bi bi-building" aria-hidden="true"></i>
+                                    3 escolas
+                                </span>
+                                <span class="news-capacity">
+                                    <i class="bi bi-droplet" aria-hidden="true"></i>
+                                    5000L de captação
+                                </span>
+                            </div>
+                        </div>
+                        <div class="news-actions">
+                            <button class="btn btn-outline btn-sm" onclick="openNewsModal('jardins-chuva')">
+                                Saiba mais
+                            </button>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Empty State -->
+                <div class="empty-state hidden" id="emptyState">
+                    <div class="empty-icon">
+                        <i class="bi bi-search" aria-hidden="true"></i>
+                    </div>
+                    <h3>Nenhuma notícia encontrada</h3>
+                    <p>Não há notícias disponíveis para a categoria selecionada.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Upcoming Events -->
+        <section class="upcoming-events" aria-labelledby="upcoming-title">
+            <div class="container">
+                <h2 id="upcoming-title" class="section-title">Próximos Eventos</h2>
+                <div class="events-calendar">
+                    <div class="event-item">
+                        <div class="event-date">
+                            <div class="date-number">25</div>
+                            <div class="date-info">
+                                <span class="date-month">FEV</span>
+                                <span class="date-year">2025</span>
+                            </div>
+                        </div>
+                        <div class="event-details">
+                            <h3>Seminário sobre Qualidade da Água</h3>
+                            <p>Apresentação dos resultados dos projetos de monitoramento desenvolvidos pelas alunas participantes.</p>
+                            <div class="event-meta">
+                                <span><i class="bi bi-geo-alt" aria-hidden="true"></i> Online</span>
+                                <span><i class="bi bi-clock" aria-hidden="true"></i> 14h às 17h</span>
+                            </div>
+                        </div>
+                        <div class="event-actions">
+                            <button class="btn btn-primary btn-sm">Inscrever-se</button>
+                        </div>
+                    </div>
+
+                    <div class="event-item">
+                        <div class="event-date">
+                            <div class="date-number">15</div>
+                            <div class="date-info">
+                                <span class="date-month">MAR</span>
+                                <span class="date-year">2025</span>
+                            </div>
+                        </div>
+                        <div class="event-details">
+                            <h3>Dia Mundial da Água - Ações Educativas</h3>
+                            <p>Atividades especiais em todas as cidades participantes para celebrar o Dia Mundial da Água.</p>
+                            <div class="event-meta">
+                                <span><i class="bi bi-geo-alt" aria-hidden="true"></i> 6 cidades</span>
+                                <span><i class="bi bi-people" aria-hidden="true"></i> Comunidade</span>
+                            </div>
+                        </div>
+                        <div class="event-actions">
+                            <button class="btn btn-outline btn-sm">Saiba mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Signup -->
+        <section class="newsletter" aria-labelledby="newsletter-title">
+            <div class="container">
+                <div class="newsletter-content">
+                    <div class="newsletter-text">
+                        <h2 id="newsletter-title">Receba nossas atualizações</h2>
+                        <p>Cadastre-se para receber as últimas notícias e informações sobre eventos do projeto Guardiãs das Águas.</p>
+                    </div>
+                    <form class="newsletter-form" id="newsletterForm" novalidate>
+                        <div class="newsletter-input-group">
+                            <input type="email" id="newsletterEmail" placeholder="Seu email" class="newsletter-input" required aria-label="Email para newsletter">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="bi bi-envelope-fill" aria-hidden="true"></i>
+                                Cadastrar
+                            </button>
+                        </div>
+                        <div class="newsletter-error hidden" id="newsletterError" role="alert"></div>
+                        <div class="newsletter-success hidden" id="newsletterSuccess" role="alert">
+                            <i class="bi bi-check-circle-fill" aria-hidden="true"></i>
+                            Email cadastrado com sucesso!
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- News Modal -->
+    <div class="modal hidden" id="newsModal" role="dialog" aria-labelledby="newsModalTitle">
+        <div class="modal-overlay" id="newsModalOverlay"></div>
+        <div class="modal-content modal-large">
+            <div class="modal-header">
+                <h2 id="newsModalTitle">Detalhes da Notícia</h2>
+                <button class="modal-close" id="closeNewsModal" aria-label="Fechar modal">
+                    <i class="bi bi-x-lg" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="modal-body" id="newsModalBody">
+                <!-- News content will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Guardiãs das Águas</h3>
+                    <p>Projeto de educação ambiental focado em saneamento básico e recursos hídricos, promovendo o protagonismo feminino na ciência.</p>
+                    <div class="social-links">
+                        <a href="https://www.youtube.com/watch?v=YAmCkvNIiYg" target="_blank" rel="noopener noreferrer" aria-label="Canal no YouTube">
+                            <i class="bi bi-youtube" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://instagram.com/Guardias.agua" target="_blank" rel="noopener noreferrer" aria-label="Perfil no Instagram">
+                            <i class="bi bi-instagram" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <nav aria-label="Links do rodapé">
+                        <ul>
+                            <li><a href="index.html">Início</a></li>
+                            <li><a href="about.html">Sobre o Projeto</a></li>
+                            <li><a href="projects.html">Projetos</a></li>
+                            <li><a href="materials.html">Materiais</a></li>
+                            <li><a href="quiz.html">Quiz Educativo</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Instituição</h4>
+                    <p>Universidade Federal de Uberlândia</p>
+                    <p>SENAI Uberlândia CFP Dr. Celso Charuri</p>
+                    <p>Minas Gerais - Brasil</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Guardiãs das Águas. Todos os direitos reservados.</p>
+                <p>Desenvolvido com 💜 para a educação ambiental</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // News filtering functionality
+        const categoryFilters = document.querySelectorAll('.category-filter');
+        const newsCards = document.querySelectorAll('.news-card');
+        const emptyState = document.getElementById('emptyState');
+
+        categoryFilters.forEach(filter => {
+            filter.addEventListener('click', () => {
+                const category = filter.getAttribute('data-category');
+                
+                // Update active filter
+                categoryFilters.forEach(f => {
+                    f.classList.remove('active');
+                    f.setAttribute('aria-pressed', 'false');
+                });
+                filter.classList.add('active');
+                filter.setAttribute('aria-pressed', 'true');
+                
+                // Filter news cards
+                let visibleCount = 0;
+                newsCards.forEach(card => {
+                    const cardCategory = card.getAttribute('data-category');
+                    if (category === 'todas' || category === cardCategory) {
+                        card.style.display = 'block';
+                        visibleCount++;
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+                
+                // Show/hide empty state
+                if (visibleCount === 0) {
+                    emptyState.classList.remove('hidden');
+                } else {
+                    emptyState.classList.add('hidden');
+                }
+            });
+        });
+
+        // Newsletter form
+        document.getElementById('newsletterForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const email = document.getElementById('newsletterEmail').value.trim();
+            const errorElement = document.getElementById('newsletterError');
+            const successElement = document.getElementById('newsletterSuccess');
+            
+            // Clear previous messages
+            errorElement.classList.add('hidden');
+            successElement.classList.add('hidden');
+            
+            if (!email) {
+                errorElement.textContent = 'Email é obrigatório';
+                errorElement.classList.remove('hidden');
+                return;
+            }
+            
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                errorElement.textContent = 'Email deve ter um formato válido';
+                errorElement.classList.remove('hidden');
+                return;
+            }
+            
+            // Simulate successful subscription
+            successElement.classList.remove('hidden');
+            document.getElementById('newsletterEmail').value = '';
+        });
+
+        // News modal functionality
+        const newsDetails = {
+            'plataforma-digital': {
+                title: 'Lançamento da Plataforma Digital Educativa',
+                date: '22 de Janeiro, 2025',
+                content: `
+                    <p>O projeto Guardiãs das Águas marca um novo capítulo em suas ações educativas com o lançamento de uma plataforma digital completa e interativa. Esta iniciativa representa um avanço significativo na democratização do conhecimento sobre recursos hídricos e saneamento básico.</p>
+                    
+                    <h3>Principais Funcionalidades</h3>
+                    <ul>
+                        <li><strong>Quiz Educativo Interativo:</strong> Jogo de perguntas e respostas com feedback educativo detalhado</li>
+                        <li><strong>Materiais Didáticos:</strong> Biblioteca completa de recursos para educadores e estudantes</li>
+                        <li><strong>Galeria de Projetos:</strong> Showcase das iniciativas desenvolvidas nas seis cidades participantes</li>
+                        <li><strong>Canais de Denúncia:</strong> Informações sobre órgãos competentes para denúncias ambientais</li>
+                    </ul>
+                    
+                    <h3>Impacto Esperado</h3>
+                    <p>A plataforma tem como objetivo alcançar estudantes, educadores e comunidades em todo o Brasil, ampliando o impacto das ações educativas do projeto para além das seis cidades participantes.</p>
+                `
+            },
+            'workshop-tecnologias': {
+                title: 'Workshop de Tecnologias Sociais em Uberlândia',
+                date: '20 de Janeiro, 2025',
+                content: `
+                    <p>O workshop reuniu alunas participantes de todas as regiões do projeto para compartilhar conhecimentos e experiências sobre tecnologias sociais aplicadas ao tratamento e gestão de água.</p>
+                    
+                    <h3>Programação</h3>
+                    <ul>
+                        <li>Apresentação de projetos por região</li>
+                        <li>Mesa redonda sobre inovação social</li>
+                        <li>Oficinas práticas de construção de tecnologias</li>
+                        <li>Planejamento colaborativo para próximas ações</li>
+                    </ul>
+                    
+                    <p>O evento fortaleceu a rede de colaboração entre as participantes e gerou novos insights para o desenvolvimento de soluções inovadoras.</p>
+                `
+            }
+        };
+
+        function openNewsModal(newsId) {
+            const modal = document.getElementById('newsModal');
+            const modalTitle = document.getElementById('newsModalTitle');
+            const modalBody = document.getElementById('newsModalBody');
+            const news = newsDetails[newsId];
+
+            if (!news) return;
+
+            modalTitle.textContent = news.title;
+            modalBody.innerHTML = `
+                <div class="news-detail">
+                    <div class="news-detail-meta">
+                        <span class="news-detail-date">${news.date}</span>
+                    </div>
+                    <div class="news-detail-content">
+                        ${news.content}
+                    </div>
+                </div>
+            `;
+
+            modal.classList.remove('hidden');
+        }
+
+        // Close modal functionality
+        document.getElementById('closeNewsModal').addEventListener('click', () => {
+            document.getElementById('newsModal').classList.add('hidden');
+        });
+
+        document.getElementById('newsModalOverlay').addEventListener('click', () => {
+            document.getElementById('newsModal').classList.add('hidden');
+        });
+    </script>
+</body>
+</html>

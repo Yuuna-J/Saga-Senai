@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Educativo - Guardiãs das Águas</title>
+    <meta name="description" content="Teste seus conhecimentos sobre saneamento básico e recursos hídricos no quiz educativo do projeto Guardiãs das Águas.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/quiz.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" role="banner">
+        <nav class="navbar" role="navigation" aria-label="Menu principal">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <img src="assets/logo.svg" alt="Logo Guardiãs das Águas" class="logo">
+                    <h1 class="brand-name">Guardiãs das Águas</h1>
+                </div>
+                
+                <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+                    <span class="hamburger"></span>
+                </button>
+                
+                <ul class="nav-menu" role="menubar">
+                    <li class="nav-item" role="none">
+                        <a href="index.html" class="nav-link" role="menuitem">Início</a>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <a href="about.html" class="nav-link" role="menuitem">Sobre</a>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <a href="projects.html" class="nav-link" role="menuitem">Projetos</a>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <a href="materials.html" class="nav-link" role="menuitem">Materiais</a>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <a href="quiz.html" class="nav-link quiz-link active" role="menuitem">
+                            <i class="bi bi-controller" aria-hidden="true"></i>
+                            Quiz Educativo
+                        </a>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <a href="contact.html" class="nav-link" role="menuitem">Contato</a>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <a href="news.html" class="nav-link" role="menuitem">Notícias</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="quiz-main">
+        <!-- Quiz Container -->
+        <div class="quiz-container" id="quizContainer">
+            
+            <!-- Welcome Screen -->
+            <div class="quiz-screen" id="welcomeScreen">
+                <div class="welcome-content">
+                    <div class="quiz-header">
+                        <i class="bi bi-droplet-fill quiz-icon" aria-hidden="true"></i>
+                        <h1>Quiz Educativo Guardiãs das Águas</h1>
+                        <p>Teste seus conhecimentos sobre saneamento básico, recursos hídricos e sustentabilidade!</p>
+                    </div>
+                    
+                    <div class="quiz-info">
+                        <div class="info-grid">
+                            <div class="info-card">
+                                <i class="bi bi-clock" aria-hidden="true"></i>
+                                <h3>Duração</h3>
+                                <p>10-15 minutos</p>
+                            </div>
+                            <div class="info-card">
+                                <i class="bi bi-question-circle" aria-hidden="true"></i>
+                                <h3>Questões</h3>
+                                <p>10 perguntas</p>
+                            </div>
+                            <div class="info-card">
+                                <i class="bi bi-award" aria-hidden="true"></i>
+                                <h3>Pontuação</h3>
+                                <p>Até 1000 pontos</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="difficulty-selection">
+                        <h3>Escolha o nível de dificuldade:</h3>
+                        <div class="difficulty-buttons">
+                            <button class="difficulty-btn" data-difficulty="facil" aria-describedby="easy-desc">
+                                <i class="bi bi-star" aria-hidden="true"></i>
+                                Fácil
+                            </button>
+                            <button class="difficulty-btn" data-difficulty="medio" aria-describedby="medium-desc">
+                                <i class="bi bi-star-fill" aria-hidden="true"></i>
+                                Médio
+                            </button>
+                            <button class="difficulty-btn" data-difficulty="dificil" aria-describedby="hard-desc">
+                                <i class="bi bi-star-half" aria-hidden="true"></i>
+                                Difícil
+                            </button>
+                        </div>
+                        <div class="sr-only">
+                            <span id="easy-desc">Perguntas básicas sobre água e saneamento</span>
+                            <span id="medium-desc">Conceitos intermediários de sustentabilidade</span>
+                            <span id="hard-desc">Questões avançadas sobre recursos hídricos</span>
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn-primary btn-large start-quiz-btn" id="startQuizBtn" disabled aria-describedby="start-desc">
+                        <i class="bi bi-play-fill" aria-hidden="true"></i>
+                        Começar Quiz
+                    </button>
+                    <span id="start-desc" class="sr-only">Inicie o quiz educativo sobre recursos hídricos</span>
+                </div>
+            </div>
+            
+            <!-- Quiz Game Screen -->
+            <div class="quiz-screen hidden" id="gameScreen">
+                <div class="quiz-progress">
+                    <div class="progress-info">
+                        <span class="question-counter">
+                            Pergunta <span id="currentQuestion">1</span> de <span id="totalQuestions">10</span>
+                        </span>
+                        <span class="score-display">
+                            Pontos: <span id="currentScore">0</span>
+                        </span>
+                    </div>
+                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                </div>
+                
+                <div class="question-container">
+                    <div class="question-category" id="questionCategory"></div>
+                    <h2 class="question-text" id="questionText"></h2>
+                    
+                    <div class="answers-grid" id="answersContainer" role="radiogroup" aria-labelledby="questionText">
+                        <!-- Answers will be inserted here by JavaScript -->
+                    </div>
+                    
+                    <div class="question-timer">
+                        <div class="timer-circle">
+                            <svg class="timer-svg" width="60" height="60">
+                                <circle cx="30" cy="30" r="25" class="timer-bg" />
+                                <circle cx="30" cy="30" r="25" class="timer-progress" id="timerProgress" />
+                            </svg>
+                            <span class="timer-text" id="timerText">30</span>
+                        </div>
+                        <p class="timer-label">segundos</p>
+                    </div>
+                </div>
+                
+                <div class="quiz-actions">
+                    <button class="btn btn-secondary" id="skipBtn" aria-describedby="skip-desc">
+                        <i class="bi bi-skip-forward" aria-hidden="true"></i>
+                        Pular
+                    </button>
+                    <button class="btn btn-primary" id="nextBtn" disabled aria-describedby="next-desc">
+                        Próxima
+                        <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                    </button>
+                    <div class="sr-only">
+                        <span id="skip-desc">Pular esta pergunta</span>
+                        <span id="next-desc">Ir para a próxima pergunta</span>
+                    </div>
+                </div>
+                
+                <div class="feedback-modal hidden" id="feedbackModal" role="dialog" aria-labelledby="feedbackTitle">
+                    <div class="feedback-content">
+                        <div class="feedback-icon" id="feedbackIcon"></div>
+                        <h3 id="feedbackTitle"></h3>
+                        <p id="feedbackText"></p>
+                        <button class="btn btn-primary" id="closeFeedbackBtn">Continuar</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Results Screen -->
+            <div class="quiz-screen hidden" id="resultsScreen">
+                <div class="results-content">
+                    <div class="results-header">
+                        <div class="results-badge" id="resultsBadge">
+                            <i class="bi bi-award-fill" aria-hidden="true"></i>
+                        </div>
+                        <h1 id="resultsTitle">Quiz Concluído!</h1>
+                        <p class="results-subtitle" id="resultsSubtitle"></p>
+                    </div>
+                    
+                    <div class="results-stats">
+                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <i class="bi bi-trophy-fill" aria-hidden="true"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-value" id="finalScore">0</div>
+                                <div class="stat-label">Pontos</div>
+                            </div>
+                        </div>
+                        
+                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <i class="bi bi-check-circle-fill" aria-hidden="true"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-value"><span id="correctAnswers">0</span>/10</div>
+                                <div class="stat-label">Acertos</div>
+                            </div>
+                        </div>
+                        
+                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <i class="bi bi-speedometer2" aria-hidden="true"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-value" id="accuracy">0%</div>
+                                <div class="stat-label">Precisão</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="results-message" id="resultsMessage"></div>
+                    
+                    <div class="results-actions">
+                        <button class="btn btn-primary" id="playAgainBtn">
+                            <i class="bi bi-arrow-repeat" aria-hidden="true"></i>
+                            Jogar Novamente
+                        </button>
+                        <button class="btn btn-secondary" id="shareResultsBtn" aria-describedby="share-desc">
+                            <i class="bi bi-share" aria-hidden="true"></i>
+                            Compartilhar
+                        </button>
+                        <a href="materials.html" class="btn btn-outline" aria-describedby="materials-desc">
+                            <i class="bi bi-book" aria-hidden="true"></i>
+                            Ver Materiais
+                        </a>
+                        <div class="sr-only">
+                            <span id="share-desc">Compartilhe seu resultado nas redes sociais</span>
+                            <span id="materials-desc">Acesse materiais educativos para aprender mais</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Share Modal -->
+        <div class="modal hidden" id="shareModal" role="dialog" aria-labelledby="shareTitle">
+            <div class="modal-overlay" id="shareModalOverlay"></div>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 id="shareTitle">Compartilhar Resultado</h2>
+                    <button class="modal-close" id="closeShareModal" aria-label="Fechar modal">
+                        <i class="bi bi-x-lg" aria-hidden="true"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Compartilhe seu resultado do Quiz Guardiãs das Águas:</p>
+                    <div class="share-buttons">
+                        <a href="#" class="share-btn share-whatsapp" id="shareWhatsapp" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-whatsapp" aria-hidden="true"></i>
+                            WhatsApp
+                        </a>
+                        <a href="#" class="share-btn share-twitter" id="shareTwitter" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-twitter" aria-hidden="true"></i>
+                            Twitter
+                        </a>
+                        <a href="#" class="share-btn share-facebook" id="shareFacebook" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-facebook" aria-hidden="true"></i>
+                            Facebook
+                        </a>
+                        <button class="share-btn share-copy" id="copyLink">
+                            <i class="bi bi-clipboard" aria-hidden="true"></i>
+                            Copiar Link
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Guardiãs das Águas</h3>
+                    <p>Projeto de educação ambiental focado em saneamento básico e recursos hídricos, promovendo o protagonismo feminino na ciência.</p>
+                    <div class="social-links">
+                        <a href="https://www.youtube.com/watch?v=YAmCkvNIiYg" target="_blank" rel="noopener noreferrer" aria-label="Canal no YouTube">
+                            <i class="bi bi-youtube" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://instagram.com/Guardias.agua" target="_blank" rel="noopener noreferrer" aria-label="Perfil no Instagram">
+                            <i class="bi bi-instagram" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <nav aria-label="Links do rodapé">
+                        <ul>
+                            <li><a href="index.html">Início</a></li>
+                            <li><a href="about.html">Sobre o Projeto</a></li>
+                            <li><a href="projects.html">Projetos</a></li>
+                            <li><a href="materials.html">Materiais</a></li>
+                            <li><a href="contact.html">Contato</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Instituição</h4>
+                    <p>Universidade Federal de Uberlândia</p>
+                    <p>SENAI Uberlândia CFP Dr. Celso Charuri</p>
+                    <p>Minas Gerais - Brasil</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Guardiãs das Águas. Todos os direitos reservados.</p>
+                <p>Desenvolvido com 💜 para a educação ambiental</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/questions.js"></script>
+    <script src="js/quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos das Alunas - Guardiãs das Águas</title>
+    <meta name="description" content="Conheça os projetos desenvolvidos pelas alunas participantes do Guardiãs das Águas nas seis cidades brasileiras.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" role="banner">
+        <nav class="navbar" role="navigation" aria-label="Menu principal">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <img src="assets/logo.svg" alt="Logo Guardiãs das Águas" class="logo">
+                    <h1 class="brand-name">Guardiãs das Águas</h1>
+                </div>
+                
+                <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+                    <span class="hamburger"></span>
+                </button>
+                
+                <ul class="nav-menu" role="menubar">
+                    <li class="nav-item" role="none">
+                        <a href="index.html" class="nav-link" role="menuitem">Início</a>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <a href="about.html" class="nav-link" role="menuitem">Sobre</a>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <a href="projects.html" class="nav-link active" role="menuitem">Projetos</a>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <a href="materials.html" class="nav-link" role="menuitem">Materiais</a>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <a href="quiz.html" class="nav-link quiz-link" role="menuitem">
+                            <i class="bi bi-controller" aria-hidden="true"></i>
+                            Quiz Educativo
+                        </a>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <a href="contact.html" class="nav-link" role="menuitem">Contato</a>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <a href="news.html" class="nav-link" role="menuitem">Notícias</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header" aria-labelledby="page-title">
+            <div class="container">
+                <h1 id="page-title">Projetos das Alunas</h1>
+                <p class="page-description">Conheça as iniciativas inovadoras desenvolvidas pelas participantes do projeto em seis cidades brasileiras</p>
+            </div>
+        </section>
+
+        <!-- Filter Section -->
+        <section class="filter-section" aria-labelledby="filter-title">
+            <div class="container">
+                <h2 id="filter-title" class="sr-only">Filtrar projetos por região</h2>
+                <div class="filter-controls">
+                    <button class="filter-btn active" data-filter="todos" aria-pressed="true">
+                        <i class="bi bi-grid-3x3-gap-fill" aria-hidden="true"></i>
+                        Todos os Projetos
+                    </button>
+                    <button class="filter-btn" data-filter="nordeste" aria-pressed="false">
+                        <i class="bi bi-sun-fill" aria-hidden="true"></i>
+                        Nordeste
+                    </button>
+                    <button class="filter-btn" data-filter="centro-oeste" aria-pressed="false">
+                        <i class="bi bi-tree-fill" aria-hidden="true"></i>
+                        Centro-Oeste
+                    </button>
+                    <button class="filter-btn" data-filter="sul" aria-pressed="false">
+                        <i class="bi bi-snow" aria-hidden="true"></i>
+                        Sul
+                    </button>
+                    <button class="filter-btn" data-filter="sudeste" aria-pressed="false">
+                        <i class="bi bi-building" aria-hidden="true"></i>
+                        Sudeste
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Grid -->
+        <section class="projects-section" aria-labelledby="projects-title">
+            <div class="container">
+                <h2 id="projects-title" class="sr-only">Lista de projetos por região</h2>
+                
+                <!-- Nordeste Projects -->
+                <div class="region-section" data-region="nordeste">
+                    <h3 class="region-title">
+                        <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+                        Região Nordeste
+                    </h3>
+                    <div class="projects-grid">
+                        <!-- Juazeiro do Norte -->
+                        <article class="project-card" data-city="juazeiro-norte">
+                            <div class="project-header">
+                                <div class="project-location">
+                                    <i class="bi bi-geo-alt" aria-hidden="true"></i>
+                                    <span>Juazeiro do Norte - CE</span>
+                                </div>
+                                <div class="project-status">
+                                    <span class="status-badge status-active">Em Desenvolvimento</span>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h4>Gestão Sustentável de Água no Semiárido</h4>
+                                <p>Desenvolvimento de tecnologias sociais para captação e tratamento de água de chuva em comunidades rurais, focando na autonomia hídrica e qualidade de vida.</p>
+                                <div class="project-tags">
+                                    <span class="tag">Captação de Chuva</span>
+                                    <span class="tag">Tecnologia Social</span>
+                                    <span class="tag">Comunidades Rurais</span>
+                                </div>
+                            </div>
+                            <div class="project-footer">
+                                <div class="project-authors">
+                                    <i class="bi bi-people" aria-hidden="true"></i>
+                                    <span>Equipe Juazeiro do Norte</span>
+                                </div>
+                                <button class="btn btn-outline btn-sm" onclick="openProjectModal('juazeiro-norte')">
+                                    Ver Detalhes
+                                </button>
+                            </div>
+                        </article>
+
+                        <!-- Aracaju -->
+                        <article class="project-card" data-city="aracaju">
+                            <div class="project-header">
+                                <div class="project-location">
+                                    <i class="bi bi-geo-alt" aria-hidden="true"></i>
+                                    <span>Aracaju - SE</span>
+                                </div>
+                                <div class="project-status">
+                                    <span class="status-badge status-active">Em Desenvolvimento</span>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h4>Monitoramento da Qualidade das Águas Costeiras</h4>
+                                <p>Sistema de monitoramento participativo da qualidade das águas em áreas costeiras, incluindo praias e manguezais, com foco na educação ambiental marinha.</p>
+                                <div class="project-tags">
+                                    <span class="tag">Águas Costeiras</span>
+                                    <span class="tag">Monitoramento</span>
+                                    <span class="tag">Manguezais</span>
+                                </div>
+                            </div>
+                            <div class="project-footer">
+                                <div class="project-authors">
+                                    <i class="bi bi-people" aria-hidden="true"></i>
+                                    <span>Equipe Aracaju</span>
+                                </div>
+                                <button class="btn btn-outline btn-sm" onclick="openProjectModal('aracaju')">
+                                    Ver Detalhes
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Centro-Oeste Projects -->
+                <div class="region-section" data-region="centro-oeste">
+                    <h3 class="region-title">
+                        <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+                        Região Centro-Oeste
+                    </h3>
+                    <div class="projects-grid">
+                        <!-- Cuiabá -->
+                        <article class="project-card" data-city="cuiaba">
+                            <div class="project-header">
+                                <div class="project-location">
+                                    <i class="bi bi-geo-alt" aria-hidden="true"></i>
+                                    <span>Cuiabá - MT</span>
+                                </div>
+                                <div class="project-status">
+                                    <span class="status-badge status-active">Em Desenvolvimento</span>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h4>Preservação de Nascentes do Pantanal</h4>
+                                <p>Projeto de mapeamento, proteção e recuperação de nascentes na região metropolitana de Cuiabá, com foco na preservação do bioma Pantanal.</p>
+                                <div class="project-tags">
+                                    <span class="tag">Pantanal</span>
+                                    <span class="tag">Nascentes</span>
+                                    <span class="tag">Recuperação</span>
+                                </div>
+                            </div>
+                            <div class="project-footer">
+                                <div class="project-authors">
+                                    <i class="bi bi-people" aria-hidden="true"></i>
+                                    <span>Equipe Cuiabá</span>
+                                </div>
+                                <button class="btn btn-outline btn-sm" onclick="openProjectModal('cuiaba')">
+                                    Ver Detalhes
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Sul Projects -->
+                <div class="region-section" data-region="sul">
+                    <h3 class="region-title">
+                        <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+                        Região Sul
+                    </h3>
+                    <div class="projects-grid">
+                        <!-- Rio Grande -->
+                        <article class="project-card" data-city="rio-grande">
+                            <div class="project-header">
+                                <div class="project-location">
+                                    <i class="bi bi-geo-alt" aria-hidden="true"></i>
+                                    <span>Rio Grande - RS</span>
+                                </div>
+                                <div class="project-status">
+                                    <span class="status-badge status-active">Em Desenvolvimento</span>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h4>Tratamento de Efluentes Portuários</h4>
+                                <p>Desenvolvimento de sistema de tratamento de efluentes para atividades portuárias, reduzindo o impacto ambiental nas águas da Lagoa dos Patos.</p>
+                                <div class="project-tags">
+                                    <span class="tag">Efluentes</span>
+                                    <span class="tag">Portos</span>
+                                    <span class="tag">Lagoa dos Patos</span>
+                                </div>
+                            </div>
+                            <div class="project-footer">
+                                <div class="project-authors">
+                                    <i class="bi bi-people" aria-hidden="true"></i>
+                                    <span>Equipe Rio Grande</span>
+                                </div>
+                                <button class="btn btn-outline btn-sm" onclick="openProjectModal('rio-grande')">
+                                    Ver Detalhes
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Sudeste Projects -->
+                <div class="region-section" data-region="sudeste">
+                    <h3 class="region-title">
+                        <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+                        Região Sudeste
+                    </h3>
+                    <div class="projects-grid">
+                        <!-- Uberaba -->
+                        <article class="project-card" data-city="uberaba">
+                            <div class="project-header">
+                                <div class="project-location">
+                                    <i class="bi bi-geo-alt" aria-hidden="true"></i>
+                                    <span>Uberaba - MG</span>
+                                </div>
+                                <div class="project-status">
+                                    <span class="status-badge status-active">Em Desenvolvimento</span>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h4>Reúso de Água em Ambientes Urbanos</h4>
+                                <p>Sistema de reaproveitamento de águas cinzas em residências e edifícios públicos, promovendo o uso racional da água em meio urbano.</p>
+                                <div class="project-tags">
+                                    <span class="tag">Reúso de Água</span>
+                                    <span class="tag">Águas Cinzas</span>
+                                    <span class="tag">Ambiente Urbano</span>
+                                </div>
+                            </div>
+                            <div class="project-footer">
+                                <div class="project-authors">
+                                    <i class="bi bi-people" aria-hidden="true"></i>
+                                    <span>Equipe Uberaba</span>
+                                </div>
+                                <button class="btn btn-outline btn-sm" onclick="openProjectModal('uberaba')">
+                                    Ver Detalhes
+                                </button>
+                            </div>
+                        </article>
+
+                        <!-- Uberlândia -->
+                        <article class="project-card" data-city="uberlandia">
+                            <div class="project-header">
+                                <div class="project-location">
+                                    <i class="bi bi-geo-alt" aria-hidden="true"></i>
+                                    <span>Uberlândia - MG</span>
+                                </div>
+                                <div class="project-status">
+                                    <span class="status-badge status-active">Em Desenvolvimento</span>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h4>Jardins de Chuva e Drenagem Sustentável</h4>
+                                <p>Implementação de jardins de chuva e sistemas de drenagem sustentável em escolas e praças públicas para controle de alagamentos urbanos.</p>
+                                <div class="project-tags">
+                                    <span class="tag">Jardins de Chuva</span>
+                                    <span class="tag">Drenagem</span>
+                                    <span class="tag">Alagamentos</span>
+                                </div>
+                            </div>
+                            <div class="project-footer">
+                                <div class="project-authors">
+                                    <i class="bi bi-people" aria-hidden="true"></i>
+                                    <span>Equipe Uberlândia</span>
+                                </div>
+                                <button class="btn btn-outline btn-sm" onclick="openProjectModal('uberlandia')">
+                                    Ver Detalhes
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Statistics -->
+        <section class="stats-section" aria-labelledby="stats-title">
+            <div class="container">
+                <h2 id="stats-title" class="section-title">Impacto dos Projetos</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="bi bi-droplet-fill" aria-hidden="true"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number">6</div>
+                            <div class="stat-label">Projetos Ativos</div>
+                            <div class="stat-description">Em desenvolvimento nas seis cidades</div>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="bi bi-people-fill" aria-hidden="true"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number">∞</div>
+                            <div class="stat-label">Pessoas Beneficiadas</div>
+                            <div class="stat-description">Através das soluções desenvolvidas</div>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number">4</div>
+                            <div class="stat-label">Regiões Brasileiras</div>
+                            <div class="stat-description">Cobertura nacional do projeto</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta" aria-labelledby="cta-title">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 id="cta-title">Inspire-se e Participe!</h2>
+                    <p>Os projetos das nossas alunas mostram como a ciência pode transformar realidades. Conheça mais sobre nossa metodologia e materiais educativos.</p>
+                    <div class="cta-actions">
+                        <a href="materials.html" class="btn btn-primary">Ver Materiais</a>
+                        <a href="quiz.html" class="btn btn-secondary">
+                            <i class="bi bi-controller" aria-hidden="true"></i>
+                            Jogar Quiz
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Project Details Modal -->
+    <div class="modal hidden" id="projectModal" role="dialog" aria-labelledby="modalTitle">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content modal-large">
+            <div class="modal-header">
+                <h2 id="modalTitle">Detalhes do Projeto</h2>
+                <button class="modal-close" id="closeModal" aria-label="Fechar modal">
+                    <i class="bi bi-x-lg" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Project details will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Guardiãs das Águas</h3>
+                    <p>Projeto de educação ambiental focado em saneamento básico e recursos hídricos, promovendo o protagonismo feminino na ciência.</p>
+                    <div class="social-links">
+                        <a href="https://www.youtube.com/watch?v=YAmCkvNIiYg" target="_blank" rel="noopener noreferrer" aria-label="Canal no YouTube">
+                            <i class="bi bi-youtube" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://instagram.com/Guardias.agua" target="_blank" rel="noopener noreferrer" aria-label="Perfil no Instagram">
+                            <i class="bi bi-instagram" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <nav aria-label="Links do rodapé">
+                        <ul>
+                            <li><a href="index.html">Início</a></li>
+                            <li><a href="about.html">Sobre o Projeto</a></li>
+                            <li><a href="materials.html">Materiais</a></li>
+                            <li><a href="quiz.html">Quiz Educativo</a></li>
+                            <li><a href="contact.html">Contato</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Instituição</h4>
+                    <p>Universidade Federal de Uberlândia</p>
+                    <p>SENAI Uberlândia CFP Dr. Celso Charuri</p>
+                    <p>Minas Gerais - Brasil</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Guardiãs das Águas. Todos os direitos reservados.</p>
+                <p>Desenvolvido com 💜 para a educação ambiental</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Project filtering functionality
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const regionSections = document.querySelectorAll('.region-section');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const filter = button.getAttribute('data-filter');
+                
+                // Update active button
+                filterButtons.forEach(btn => {
+                    btn.classList.remove('active');
+                    btn.setAttribute('aria-pressed', 'false');
+                });
+                button.classList.add('active');
+                button.setAttribute('aria-pressed', 'true');
+                
+                // Filter sections
+                regionSections.forEach(section => {
+                    const region = section.getAttribute('data-region');
+                    if (filter === 'todos' || filter === region) {
+                        section.style.display = 'block';
+                    } else {
+                        section.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Project modal functionality
+        const projectDetails = {
+            'juazeiro-norte': {
+                title: 'Gestão Sustentável de Água no Semiárido',
+                location: 'Juazeiro do Norte - CE',
+                description: 'Este projeto visa desenvolver e implementar tecnologias sociais para captação, armazenamento e tratamento de água de chuva em comunidades rurais do semiárido cearense.',
+                objectives: [
+                    'Implementar sistemas de captação de água de chuva',
+                    'Desenvolver filtros de baixo custo',
+                    'Capacitar a comunidade local',
+                    'Promover autonomia hídrica'
+                ],
+                impact: 'Beneficia diretamente famílias em situação de vulnerabilidade hídrica, proporcionando acesso à água de qualidade e reduzindo a dependência de fontes externas.',
+                technologies: ['Cisterna de placas', 'Filtros cerâmicos', 'Sistema de gotejamento', 'Biodigestor'],
+                status: 'Em desenvolvimento - Fase de implementação piloto'
+            },
+            'aracaju': {
+                title: 'Monitoramento da Qualidade das Águas Costeiras',
+                location: 'Aracaju - SE',
+                description: 'Sistema participativo de monitoramento da qualidade das águas em praias e manguezais de Aracaju, envolvendo a comunidade local na coleta e análise de dados.',
+                objectives: [
+                    'Monitorar qualidade da água costeira',
+                    'Formar monitores comunitários',
+                    'Criar rede de dados ambientais',
+                    'Educação ambiental marinha'
+                ],
+                impact: 'Fortalece a gestão participativa dos recursos costeiros e promove a conscientização sobre a importância dos ecossistemas marinhos.',
+                technologies: ['Kits de análise portáteis', 'App móvel de coleta', 'Sensores IoT', 'Plataforma web'],
+                status: 'Em desenvolvimento - Fase de capacitação'
+            }
+        };
+
+        function openProjectModal(projectId) {
+            const modal = document.getElementById('projectModal');
+            const modalTitle = document.getElementById('modalTitle');
+            const modalBody = document.getElementById('modalBody');
+            const project = projectDetails[projectId];
+
+            if (!project) return;
+
+            modalTitle.textContent = project.title;
+            modalBody.innerHTML = `
+                <div class="project-detail">
+                    <div class="project-meta">
+                        <span class="location"><i class="bi bi-geo-alt"></i> ${project.location}</span>
+                        <span class="status">${project.status}</span>
+                    </div>
+                    
+                    <div class="project-description">
+                        <h3>Descrição</h3>
+                        <p>${project.description}</p>
+                    </div>
+                    
+                    <div class="project-objectives">
+                        <h3>Objetivos</h3>
+                        <ul>
+                            ${project.objectives.map(obj => `<li>${obj}</li>`).join('')}
+                        </ul>
+                    </div>
+                    
+                    <div class="project-impact">
+                        <h3>Impacto Esperado</h3>
+                        <p>${project.impact}</p>
+                    </div>
+                    
+                    <div class="project-technologies">
+                        <h3>Tecnologias Utilizadas</h3>
+                        <div class="tech-tags">
+                            ${project.technologies.map(tech => `<span class="tag">${tech}</span>`).join('')}
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            modal.classList.remove('hidden');
+        }
+
+        // Close modal functionality
+        document.getElementById('closeModal').addEventListener('click', () => {
+            document.getElementById('projectModal').classList.add('hidden');
+        });
+
+        document.getElementById('modalOverlay').addEventListener('click', () => {
+            document.getElementById('projectModal').classList.add('hidden');
+        });
+    </script>
+</body>
+</html>

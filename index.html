@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guardiãs das Águas - Educação Ambiental e Sustentabilidade</title>
+    <meta name="description" content="Projeto Guardiãs das Águas promove educação ambiental sobre saneamento básico e recursos hídricos em comunidades e escolas brasileiras.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" role="banner">
+        <nav class="navbar" role="navigation" aria-label="Menu principal">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <img src="assets/logo.svg" alt="Logo Guardiãs das Águas" class="logo">
+                    <h1 class="brand-name">Guardiãs das Águas</h1>
+                </div>
+                
+                <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+                    <span class="hamburger"></span>
+                </button>
+                
+                <ul class="nav-menu" role="menubar">
+                    <li class="nav-item" role="none">
+                        <a href="#home" class="nav-link active" role="menuitem">Início</a>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <a href="about.html" class="nav-link" role="menuitem">Sobre</a>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <a href="projects.html" class="nav-link" role="menuitem">Projetos</a>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <a href="materials.html" class="nav-link" role="menuitem">Materiais</a>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <a href="quiz.html" class="nav-link quiz-link" role="menuitem">
+                            <i class="bi bi-controller" aria-hidden="true"></i>
+                            Quiz Educativo
+                        </a>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <a href="contact.html" class="nav-link" role="menuitem">Contato</a>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <a href="news.html" class="nav-link" role="menuitem">Notícias</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2 id="hero-title" class="hero-title">
+                        Protegendo nossos recursos hídricos através da
+                        <span class="highlight">educação ambiental</span>
+                    </h2>
+                    <p class="hero-description">
+                        O projeto Guardiãs das Águas promove o protagonismo feminino na ciência e engenharias, 
+                        desenvolvendo ações de educação ambiental sobre saneamento básico e qualidade das águas 
+                        em comunidades e escolas de seis cidades brasileiras.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="about.html" class="btn btn-primary" aria-describedby="know-more-desc">
+                            Conheça o Projeto
+                        </a>
+                        <a href="quiz.html" class="btn btn-secondary" aria-describedby="quiz-desc">
+                            <i class="bi bi-play-fill" aria-hidden="true"></i>
+                            Jogar Quiz
+                        </a>
+                    </div>
+                    <div class="sr-only">
+                        <span id="know-more-desc">Saiba mais sobre a missão e valores do projeto</span>
+                        <span id="quiz-desc">Teste seus conhecimentos sobre recursos hídricos</span>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <img src="assets/water-drop.svg" alt="Ilustração representando a preservação da água" class="hero-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission Section -->
+        <section class="mission" aria-labelledby="mission-title">
+            <div class="container">
+                <h2 id="mission-title" class="section-title">Nossa Missão</h2>
+                <div class="mission-grid">
+                    <div class="mission-card">
+                        <div class="mission-icon">
+                            <i class="bi bi-droplet-fill" aria-hidden="true"></i>
+                        </div>
+                        <h3>Preservação da Água</h3>
+                        <p>Promovemos a conscientização sobre o uso sustentável dos recursos hídricos e a importância do saneamento básico para a saúde pública.</p>
+                    </div>
+                    <div class="mission-card">
+                        <div class="mission-icon">
+                            <i class="bi bi-people-fill" aria-hidden="true"></i>
+                        </div>
+                        <h3>Protagonismo Feminino</h3>
+                        <p>Valorizamos e incentivamos a participação de mulheres jovens nas áreas de ciências e engenharias ambientais.</p>
+                    </div>
+                    <div class="mission-card">
+                        <div class="mission-icon">
+                            <i class="bi bi-book-fill" aria-hidden="true"></i>
+                        </div>
+                        <h3>Educação Ambiental</h3>
+                        <p>Desenvolvemos materiais educativos e ações pedagógicas para comunidades escolares e populações locais.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impact Section -->
+        <section class="impact" aria-labelledby="impact-title">
+            <div class="container">
+                <h2 id="impact-title" class="section-title">Nosso Impacto</h2>
+                <div class="impact-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">6</div>
+                        <div class="stat-label">Cidades Participantes</div>
+                        <div class="stat-description">Juazeiro do Norte/CE, Aracaju/SE, Cuiabá/MT, Rio Grande/RS, Uberaba/MG e Uberlândia/MG</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">4</div>
+                        <div class="stat-label">Regiões do Brasil</div>
+                        <div class="stat-description">Nordeste, Centro-Oeste, Sul e Sudeste</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">∞</div>
+                        <div class="stat-label">Vidas Impactadas</div>
+                        <div class="stat-description">Através da educação ambiental e conscientização</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Access Section -->
+        <section class="quick-access" aria-labelledby="quick-access-title">
+            <div class="container">
+                <h2 id="quick-access-title" class="section-title">Acesso Rápido</h2>
+                <div class="access-grid">
+                    <a href="projects.html" class="access-card" aria-describedby="projects-desc">
+                        <div class="access-icon">
+                            <i class="bi bi-folder-fill" aria-hidden="true"></i>
+                        </div>
+                        <h3>Projetos das Alunas</h3>
+                        <p>Conheça os projetos desenvolvidos pelas participantes em todas as regiões</p>
+                        <span id="projects-desc" class="sr-only">Acesse a galeria de projetos desenvolvidos pelas alunas participantes</span>
+                    </a>
+                    
+                    <a href="materials.html" class="access-card" aria-describedby="materials-desc">
+                        <div class="access-icon">
+                            <i class="bi bi-file-earmark-text-fill" aria-hidden="true"></i>
+                        </div>
+                        <h3>Materiais Educativos</h3>
+                        <p>Documentos, vídeos e recursos para educação ambiental</p>
+                        <span id="materials-desc" class="sr-only">Acesse materiais educativos sobre saneamento e recursos hídricos</span>
+                    </a>
+                    
+                    <a href="quiz.html" class="access-card access-card-featured" aria-describedby="quiz-game-desc">
+                        <div class="access-icon">
+                            <i class="bi bi-controller" aria-hidden="true"></i>
+                        </div>
+                        <h3>Quiz Educativo</h3>
+                        <p>Teste seus conhecimentos de forma divertida e interativa!</p>
+                        <div class="card-badge">Novo!</div>
+                        <span id="quiz-game-desc" class="sr-only">Jogue o quiz educativo sobre saneamento básico e recursos hídricos</span>
+                    </a>
+                    
+                    <a href="contact.html" class="access-card" aria-describedby="contacts-desc">
+                        <div class="access-icon">
+                            <i class="bi bi-telephone-fill" aria-hidden="true"></i>
+                        </div>
+                        <h3>Contatos Úteis</h3>
+                        <p>Canais de denúncia ambiental e informações de contato</p>
+                        <span id="contacts-desc" class="sr-only">Acesse informações de contato e canais de denúncia ambiental</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta" aria-labelledby="cta-title">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 id="cta-title">Junte-se ao movimento!</h2>
+                    <p>Faça parte da mudança que queremos ver no mundo. Juntas, podemos proteger nossos recursos hídricos e construir um futuro mais sustentável.</p>
+                    <div class="cta-actions">
+                        <a href="about.html" class="btn btn-primary">Saiba Mais</a>
+                        <a href="contact.html" class="btn btn-outline">Entre em Contato</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Guardiãs das Águas</h3>
+                    <p>Projeto de educação ambiental focado em saneamento básico e recursos hídricos, promovendo o protagonismo feminino na ciência.</p>
+                    <div class="social-links">
+                        <a href="https://www.youtube.com/watch?v=YAmCkvNIiYg" target="_blank" rel="noopener noreferrer" aria-label="Canal no YouTube">
+                            <i class="bi bi-youtube" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://instagram.com/Guardias.agua" target="_blank" rel="noopener noreferrer" aria-label="Perfil no Instagram">
+                            <i class="bi bi-instagram" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <nav aria-label="Links do rodapé">
+                        <ul>
+                            <li><a href="about.html">Sobre o Projeto</a></li>
+                            <li><a href="projects.html">Projetos</a></li>
+                            <li><a href="materials.html">Materiais</a></li>
+                            <li><a href="quiz.html">Quiz Educativo</a></li>
+                            <li><a href="contact.html">Contato</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Instituição</h4>
+                    <p>Universidade Federal de Uberlândia</p>
+                    <p>SENAI Uberlândia CFP Dr. Celso Charuri</p>
+                    <p>Minas Gerais - Brasil</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Guardiãs das Águas. Todos os direitos reservados.</p>
+                <p>Desenvolvido com 💜 para a educação ambiental</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

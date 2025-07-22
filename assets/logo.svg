@@ -1,0 +1,130 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="60" cy="60" r="60" fill="url(#gradientBackground)"/>
+  
+  <!-- Water Drops -->
+  <g id="waterDrops">
+    <!-- Main Central Drop -->
+    <path d="M60 25 C50 35, 50 45, 60 50 C70 45, 70 35, 60 25 Z" fill="url(#gradientDrop1)"/>
+    
+    <!-- Left Drop -->
+    <path d="M40 35 C33 42, 33 48, 40 52 C47 48, 47 42, 40 35 Z" fill="url(#gradientDrop2)"/>
+    
+    <!-- Right Drop -->
+    <path d="M80 35 C73 42, 73 48, 80 52 C87 48, 87 42, 80 35 Z" fill="url(#gradientDrop2)"/>
+  </g>
+  
+  <!-- Protective Hands -->
+  <g id="protectiveHands">
+    <!-- Left Hand -->
+    <path d="M25 55 Q20 50 25 45 Q30 40 35 45 L45 55 Q40 65 35 70 Q25 75 20 70 Q15 65 20 60 Z" 
+          fill="url(#gradientHand)" stroke="#5b289e" stroke-width="1.5"/>
+    
+    <!-- Right Hand -->
+    <path d="M95 55 Q100 50 95 45 Q90 40 85 45 L75 55 Q80 65 85 70 Q95 75 100 70 Q105 65 100 60 Z" 
+          fill="url(#gradientHand)" stroke="#5b289e" stroke-width="1.5"/>
+  </g>
+  
+  <!-- Water Waves at Bottom -->
+  <g id="waterWaves">
+    <path d="M15 75 Q30 70 45 75 T75 75 T105 75 L105 85 Q90 80 75 85 T45 85 T15 85 Z" 
+          fill="url(#gradientWave1)"/>
+    <path d="M10 85 Q25 82 40 85 T70 85 T100 85 L100 95 Q85 92 70 95 T40 95 T10 95 Z" 
+          fill="url(#gradientWave2)"/>
+  </g>
+  
+  <!-- Female Symbols -->
+  <g id="femaleSymbols">
+    <!-- Left Symbol -->
+    <circle cx="30" cy="40" r="4" fill="#dedae07" stroke="#5b289e" stroke-width="1"/>
+    <line x1="30" y1="44" x2="30" y2="52" stroke="#5b289e" stroke-width="1.5"/>
+    <line x1="27" y1="49" x2="33" y2="49" stroke="#5b289e" stroke-width="1.5"/>
+    
+    <!-- Right Symbol -->
+    <circle cx="90" cy="40" r="4" fill="#dedae07" stroke="#5b289e" stroke-width="1"/>
+    <line x1="90" y1="44" x2="90" y2="52" stroke="#5b289e" stroke-width="1.5"/>
+    <line x1="87" y1="49" x2="93" y2="49" stroke="#5b289e" stroke-width="1.5"/>
+  </g>
+  
+  <!-- Scientific Elements -->
+  <g id="scientificElements">
+    <!-- Molecular Structure -->
+    <g transform="translate(60, 70)">
+      <circle cx="0" cy="0" r="2" fill="#8f73b2"/>
+      <circle cx="-8" cy="-6" r="1.5" fill="#8f73b2"/>
+      <circle cx="8" cy="-6" r="1.5" fill="#8f73b2"/>
+      <circle cx="0" cy="-12" r="1.5" fill="#8f73b2"/>
+      <line x1="0" y1="0" x2="-8" y2="-6" stroke="#8f73b2" stroke-width="1"/>
+      <line x1="0" y1="0" x2="8" y2="-6" stroke="#8f73b2" stroke-width="1"/>
+      <line x1="-8" y1="-6" x2="0" y2="-12" stroke="#8f73b2" stroke-width="1"/>
+      <line x1="8" y1="-6" x2="0" y2="-12" stroke="#8f73b2" stroke-width="1"/>
+    </g>
+  </g>
+  
+  <!-- Text Element - Simplified for logo -->
+  <text x="60" y="105" text-anchor="middle" font-family="Poppins, sans-serif" font-size="8" font-weight="600" fill="#5b289e">
+    GUARDIÃS
+  </text>
+  
+  <!-- Gradients and Filters -->
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="gradientBackground" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#dedae07;stop-opacity:0.3"/>
+      <stop offset="50%" style="stop-color:#8f73b2;stop-opacity:0.2"/>
+      <stop offset="100%" style="stop-color:#5b289e;stop-opacity:0.1"/>
+    </linearGradient>
+    
+    <!-- Water Drop Gradients -->
+    <linearGradient id="gradientDrop1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:1"/>
+      <stop offset="50%" style="stop-color:#4682B4;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#5b289e;stop-opacity:1"/>
+    </linearGradient>
+    
+    <linearGradient id="gradientDrop2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#B0E0E6;stop-opacity:0.9"/>
+      <stop offset="100%" style="stop-color:#8f73b2;stop-opacity:0.9"/>
+    </linearGradient>
+    
+    <!-- Hand Gradient -->
+    <linearGradient id="gradientHand" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#dedae07;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#8f73b2;stop-opacity:0.6"/>
+    </linearGradient>
+    
+    <!-- Wave Gradients -->
+    <linearGradient id="gradientWave1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#5b289e;stop-opacity:0.8"/>
+    </linearGradient>
+    
+    <linearGradient id="gradientWave2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#B0E0E6;stop-opacity:0.6"/>
+      <stop offset="100%" style="stop-color:#8f73b2;stop-opacity:0.6"/>
+    </linearGradient>
+    
+    <!-- Drop Shadow Filter -->
+    <filter id="dropShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#5b289e" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Apply shadow to main elements -->
+  <style>
+    #waterDrops, #protectiveHands {
+      filter: url(#dropShadow);
+    }
+    
+    /* Hover effect for interactive use */
+    svg:hover #waterDrops {
+      transform-origin: center;
+      animation: dropPulse 2s ease-in-out infinite;
+    }
+    
+    @keyframes dropPulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+  </style>
+</svg>

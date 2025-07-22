@@ -1,0 +1,95 @@
+Estratégia digital para divulgação da temática saneamento básico e recursos hídricos do projeto guardiãs das águas para comunidades e escolas
+Descrição resumida:
+Estratégia digital integrada para ampliar a visibilidade do projeto Guardiãs das Águas, promovendo o acesso da comunidade e escolas à educação ambiental. A iniciativa inclui divulgação de conteúdos sobre saneamento, recursos hídricos, resíduos, qualidade ambiental, eventos, vídeos, projetos das alunas, canais de denúncia, contatos úteis e o protagonismo feminino na ciência e na sustentabilidade.
+
+
+Benefícios esperados:
+· Centralização das informações do projeto Guardiãs da Água em uma plataforma acessível
+
+· Maior alcance e visibilidade das ações do projeto Guardiãs das Águas
+
+· Engajamento da população e estudantes em causas ambientais locais
+
+· Valorização do protagonismo juvenil e feminino para a temática de ciências e engenharias.
+
+· Engajamento da comunidade escolar e da população sobre saneamento básico e qualidade das águas
+
+· Criação de um canal oficial de divulgação de conteúdos ambientais
+
+· Acesso facilitado a informações sobre saneamento, projetos ambientais, canais de denúncia e contato com órgãos ambientais
+
+· Proposta com interface acessível, visualmente atrativa e de fácil navegação para todos os públicos.
+
+
+Detalhamento:
+A proposta solicita a criação de um meio interativo e responsivo para divulgar a missão, visão e valores do projeto Guardiãs das Águas. A plataforma deverá reunir:
+
+· Projetos desenvolvidos pelas alunas participantes em cidades de quatro regiões do Brasil (Juazeiro do Norte/CE, Aracaju/SE, Cuiabá/MT e Rio Grande/RS, Uberaba e Uberlândia/MG)
+
+· Missão, Visão e valores
+
+· Equipe do projeto
+
+· História e sobre o projeto
+
+· Galeria de Vídeos, galeria de fotos e
+
+· Documentos e materiais educativos produzidos pelo grupo
+
+· Ações de educação realizadas nos quatro estados
+
+· Agenda de eventos e ações de educação ambiental
+
+· Informações sobre saneamento básico e consumo consciente da água
+
+· Telefones úteis e canais de denúncia ambiental
+
+· Espaço para contato e redes sociais do projeto
+
+· Área para notícias ou blog, com atualizações periódicas
+
+
+A interface deverá ser acessível, de domínio gratuito, visualmente atrativa e de fácil navegação para todos os públicos.
+
+
+Escola:
+(MG) SENAI Uberlândia CFP Dr. Celso Charuri
+
+
+Restrições (O que a solução não pode ter):
+· Interface deve seguir princípios de acessibilidade digital
+
+· Linguagem clara, inclusiva e voltada à comunidade em geral
+
+· Compatibilidade com dispositivos móveis
+
+· A hospedagem deverá ter custo zero para hospedagem e manutenção inicial
+
+
+Estado:
+MG
+
+
+Área de atuação:
+Tecnologia da Informação
+
+
+Empresa:
+Universidade Federal de Uberlândia
+
+
+Data de cadastro:
+10/06/2025 17:05
+
+
+Data de início da vigência:
+10/06/2025
+
+
+Vigência:
+10/06/2026 - (12 mes(es))
+
+
+Ativo:
+Sim
+

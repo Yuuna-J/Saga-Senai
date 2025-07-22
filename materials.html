@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materiais Educativos - Guardiãs das Águas</title>
+    <meta name="description" content="Acesse documentos, vídeos e recursos educativos sobre saneamento básico e recursos hídricos do projeto Guardiãs das Águas.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" role="banner">
+        <nav class="navbar" role="navigation" aria-label="Menu principal">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <img src="assets/logo.svg" alt="Logo Guardiãs das Águas" class="logo">
+                    <h1 class="brand-name">Guardiãs das Águas</h1>
+                </div>
+                
+                <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+                    <span class="hamburger"></span>
+                </button>
+                
+                <ul class="nav-menu" role="menubar">
+                    <li class="nav-item" role="none">
+                        <a href="index.html" class="nav-link" role="menuitem">Início</a>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <a href="about.html" class="nav-link" role="menuitem">Sobre</a>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <a href="projects.html" class="nav-link" role="menuitem">Projetos</a>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <a href="materials.html" class="nav-link active" role="menuitem">Materiais</a>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <a href="quiz.html" class="nav-link quiz-link" role="menuitem">
+                            <i class="bi bi-controller" aria-hidden="true"></i>
+                            Quiz Educativo
+                        </a>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <a href="contact.html" class="nav-link" role="menuitem">Contato</a>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <a href="news.html" class="nav-link" role="menuitem">Notícias</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header" aria-labelledby="page-title">
+            <div class="container">
+                <h1 id="page-title">Materiais Educativos</h1>
+                <p class="page-description">Recursos pedagógicos, documentos e conteúdos multimídia para apoiar a educação ambiental sobre recursos hídricos</p>
+            </div>
+        </section>
+
+        <!-- Materials Categories -->
+        <section class="materials-nav" aria-labelledby="materials-nav-title">
+            <div class="container">
+                <h2 id="materials-nav-title" class="sr-only">Categorias de materiais</h2>
+                <div class="materials-categories">
+                    <button class="category-btn active" data-category="todos" aria-pressed="true">
+                        <i class="bi bi-grid-3x3-gap-fill" aria-hidden="true"></i>
+                        Todos os Materiais
+                    </button>
+                    <button class="category-btn" data-category="documentos" aria-pressed="false">
+                        <i class="bi bi-file-earmark-text" aria-hidden="true"></i>
+                        Documentos
+                    </button>
+                    <button class="category-btn" data-category="videos" aria-pressed="false">
+                        <i class="bi bi-play-circle" aria-hidden="true"></i>
+                        Vídeos
+                    </button>
+                    <button class="category-btn" data-category="infograficos" aria-pressed="false">
+                        <i class="bi bi-image" aria-hidden="true"></i>
+                        Infográficos
+                    </button>
+                    <button class="category-btn" data-category="atividades" aria-pressed="false">
+                        <i class="bi bi-puzzle" aria-hidden="true"></i>
+                        Atividades
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Materials Grid -->
+        <section class="materials-section" aria-labelledby="materials-title">
+            <div class="container">
+                <h2 id="materials-title" class="sr-only">Lista de materiais educativos</h2>
+                
+                <!-- Documents Section -->
+                <div class="materials-category" data-category="documentos">
+                    <h3 class="category-title">
+                        <i class="bi bi-file-earmark-text-fill" aria-hidden="true"></i>
+                        Documentos e Guias
+                    </h3>
+                    <div class="materials-grid">
+                        <article class="material-card">
+                            <div class="material-icon document-icon">
+                                <i class="bi bi-file-earmark-pdf-fill" aria-hidden="true"></i>
+                            </div>
+                            <div class="material-content">
+                                <h4>Guia Básico de Saneamento</h4>
+                                <p class="material-description">Documento introdutório sobre os fundamentos do saneamento básico, tratamento de água e esgoto para educadores e estudantes.</p>
+                                <div class="material-meta">
+                                    <span class="material-type">PDF</span>
+                                    <span class="material-pages">24 páginas</span>
+                                    <span class="material-level">Básico</span>
+                                </div>
+                            </div>
+                            <div class="material-actions">
+                                <button class="btn btn-outline btn-sm" onclick="viewMaterial('guia-saneamento')">
+                                    <i class="bi bi-eye" aria-hidden="true"></i>
+                                    Visualizar
+                                </button>
+                                <button class="btn btn-primary btn-sm" onclick="downloadMaterial('guia-saneamento')">
+                                    <i class="bi bi-download" aria-hidden="true"></i>
+                                    Download
+                                </button>
+                            </div>
+                        </article>
+
+                        <article class="material-card">
+                            <div class="material-icon document-icon">
+                                <i class="bi bi-file-earmark-pdf-fill" aria-hidden="true"></i>
+                            </div>
+                            <div class="material-content">
+                                <h4>Manual de Qualidade da Água</h4>
+                                <p class="material-description">Manual técnico sobre parâmetros de qualidade da água, métodos de análise e interpretação de resultados para monitoramento participativo.</p>
+                                <div class="material-meta">
+                                    <span class="material-type">PDF</span>
+                                    <span class="material-pages">36 páginas</span>
+                                    <span class="material-level">Intermediário</span>
+                                </div>
+                            </div>
+                            <div class="material-actions">
+                                <button class="btn btn-outline btn-sm" onclick="viewMaterial('manual-qualidade')">
+                                    <i class="bi bi-eye" aria-hidden="true"></i>
+                                    Visualizar
+                                </button>
+                                <button class="btn btn-primary btn-sm" onclick="downloadMaterial('manual-qualidade')">
+                                    <i class="bi bi-download" aria-hidden="true"></i>
+                                    Download
+                                </button>
+                            </div>
+                        </article>
+
+                        <article class="material-card">
+                            <div class="material-icon document-icon">
+                                <i class="bi bi-file-earmark-pdf-fill" aria-hidden="true"></i>
+                            </div>
+                            <div class="material-content">
+                                <h4>Cartilha de Tecnologias Sociais</h4>
+                                <p class="material-description">Compilação de tecnologias sociais para captação e tratamento de água desenvolvidas pelas alunas participantes do projeto.</p>
+                                <div class="material-meta">
+                                    <span class="material-type">PDF</span>
+                                    <span class="material-pages">48 páginas</span>
+                                    <span class="material-level">Avançado</span>
+                                </div>
+                            </div>
+                            <div class="material-actions">
+                                <button class="btn btn-outline btn-sm" onclick="viewMaterial('cartilha-tecnologias')">
+                                    <i class="bi bi-eye" aria-hidden="true"></i>
+                                    Visualizar
+                                </button>
+                                <button class="btn btn-primary btn-sm" onclick="downloadMaterial('cartilha-tecnologias')">
+                                    <i class="bi bi-download" aria-hidden="true"></i>
+                                    Download
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Videos Section -->
+                <div class="materials-category" data-category="videos">
+                    <h3 class="category-title">
+                        <i class="bi bi-play-circle-fill" aria-hidden="true"></i>
+                        Vídeos Educativos
+                    </h3>
+                    <div class="materials-grid">
+                        <article class="material-card video-card">
+                            <div class="material-video">
+                                <div class="video-thumbnail">
+                                    <i class="bi bi-play-circle-fill" aria-hidden="true"></i>
+                                </div>
+                                <div class="video-duration">15:32</div>
+                            </div>
+                            <div class="material-content">
+                                <h4>Ciclo da Água e Preservação</h4>
+                                <p class="material-description">Vídeo educativo sobre o ciclo da água, sua importância e como cada pessoa pode contribuir para sua preservação.</p>
+                                <div class="material-meta">
+                                    <span class="material-type">MP4</span>
+                                    <span class="material-duration">15 min</span>
+                                    <span class="material-level">Básico</span>
+                                </div>
+                            </div>
+                            <div class="material-actions">
+                                <button class="btn btn-primary btn-sm" onclick="playVideo('ciclo-agua')">
+                                    <i class="bi bi-play-fill" aria-hidden="true"></i>
+                                    Assistir
+                                </button>
+                            </div>
+                        </article>
+
+                        <article class="material-card video-card">
+                            <div class="material-video">
+                                <div class="video-thumbnail">
+                                    <i class="bi bi-play-circle-fill" aria-hidden="true"></i>
+                                </div>
+                                <div class="video-duration">12:45</div>
+                            </div>
+                            <div class="material-content">
+                                <h4>Saneamento Básico no Brasil</h4>
+                                <p class="material-description">Panorama do saneamento básico brasileiro, desafios atuais e soluções inovadoras implementadas pelo projeto.</p>
+                                <div class="material-meta">
+                                    <span class="material-type">MP4</span>
+                                    <span class="material-duration">12 min</span>
+                                    <span class="material-level">Intermediário</span>
+                                </div>
+                            </div>
+                            <div class="material-actions">
+                                <button class="btn btn-primary btn-sm" onclick="playVideo('saneamento-brasil')">
+                                    <i class="bi bi-play-fill" aria-hidden="true"></i>
+                                    Assistir
+                                </button>
+                            </div>
+                        </article>
+
+                        <article class="material-card video-card featured">
+                            <div class="material-video">
+                                <div class="video-thumbnail youtube-thumbnail">
+                                    <i class="bi bi-youtube" aria-hidden="true"></i>
+                                </div>
+                                <div class="video-duration">20:18</div>
+                                <div class="card-badge">No YouTube</div>
+                            </div>
+                            <div class="material-content">
+                                <h4>Projeto Guardiãs das Águas</h4>
+                                <p class="material-description">Vídeo oficial do projeto apresentando nossas ações, resultados e o protagonismo feminino na ciência.</p>
+                                <div class="material-meta">
+                                    <span class="material-type">YouTube</span>
+                                    <span class="material-duration">20 min</span>
+                                    <span class="material-level">Geral</span>
+                                </div>
+                            </div>
+                            <div class="material-actions">
+                                <a href="https://www.youtube.com/watch?v=YAmCkvNIiYg" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                                    <i class="bi bi-youtube" aria-hidden="true"></i>
+                                    Ver no YouTube
+                                </a>
+                            </div>
+                        </article>
+                        
+                        <article class="material-card social-card featured">
+                            <div class="material-video">
+                                <div class="video-thumbnail instagram-thumbnail">
+                                    <i class="bi bi-instagram" aria-hidden="true"></i>
+                                </div>
+                                <div class="card-badge">Instagram</div>
+                            </div>
+                            <div class="material-content">
+                                <h4>@Guardias.agua</h4>
+                                <p class="material-description">Siga nosso Instagram para acompanhar o dia a dia do projeto, conhecer as guardiãs e suas descobertas científicas!</p>
+                                <div class="material-meta">
+                                    <span class="material-type">Rede Social</span>
+                                    <span class="material-level">Atualizado Diariamente</span>
+                                </div>
+                            </div>
+                            <div class="material-actions">
+                                <a href="https://instagram.com/Guardias.agua" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                                    <i class="bi bi-instagram" aria-hidden="true"></i>
+                                    Seguir
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Infographics Section -->
+                <div class="materials-category" data-category="infograficos">
+                    <h3 class="category-title">
+                        <i class="bi bi-image-fill" aria-hidden="true"></i>
+                        Infográficos
+                    </h3>
+                    <div class="materials-grid">
+                        <article class="material-card">
+                            <div class="material-icon infographic-icon">
+                                <i class="bi bi-bar-chart-fill" aria-hidden="true"></i>
+                            </div>
+                            <div class="material-content">
+                                <h4>Situação do Saneamento no Brasil</h4>
+                                <p class="material-description">Infográfico com dados atualizados sobre a situação do saneamento básico nas regiões brasileiras.</p>
+                                <div class="material-meta">
+                                    <span class="material-type">PNG</span>
+                                    <span class="material-size">2MB</span>
+                                    <span class="material-level">Informativo</span>
+                                </div>
+                            </div>
+                            <div class="material-actions">
+                                <button class="btn btn-outline btn-sm" onclick="viewInfographic('situacao-saneamento')">
+                                    <i class="bi bi-eye" aria-hidden="true"></i>
+                                    Visualizar
+                                </button>
+                                <button class="btn btn-primary btn-sm" onclick="downloadMaterial('situacao-saneamento')">
+                                    <i class="bi bi-download" aria-hidden="true"></i>
+                                    Download
+                                </button>
+                            </div>
+                        </article>
+
+                        <article class="material-card">
+                            <div class="material-icon infographic-icon">
+                                <i class="bi bi-droplet-half" aria-hidden="true"></i>
+                            </div>
+                            <div class="material-content">
+                                <h4>Dicas de Economia de Água</h4>
+                                <p class="material-description">Infográfico visual com dicas práticas para economizar água no dia a dia doméstico e escolar.</p>
+                                <div class="material-meta">
+                                    <span class="material-type">PNG</span>
+                                    <span class="material-size">1.5MB</span>
+                                    <span class="material-level">Prático</span>
+                                </div>
+                            </div>
+                            <div class="material-actions">
+                                <button class="btn btn-outline btn-sm" onclick="viewInfographic('dicas-economia')">
+                                    <i class="bi bi-eye" aria-hidden="true"></i>
+                                    Visualizar
+                                </button>
+                                <button class="btn btn-primary btn-sm" onclick="downloadMaterial('dicas-economia')">
+                                    <i class="bi bi-download" aria-hidden="true"></i>
+                                    Download
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Activities Section -->
+                <div class="materials-category" data-category="atividades">
+                    <h3 class="category-title">
+                        <i class="bi bi-puzzle-fill" aria-hidden="true"></i>
+                        Atividades e Jogos
+                    </h3>
+                    <div class="materials-grid">
+                        <article class="material-card interactive-card">
+                            <div class="material-icon activity-icon">
+                                <i class="bi bi-controller" aria-hidden="true"></i>
+                            </div>
+                            <div class="material-content">
+                                <h4>Quiz Educativo Interativo</h4>
+                                <p class="material-description">Jogo de perguntas e respostas sobre saneamento básico e recursos hídricos com feedback educativo.</p>
+                                <div class="material-meta">
+                                    <span class="material-type">Web</span>
+                                    <span class="material-duration">15 min</span>
+                                    <span class="material-level">Interativo</span>
+                                </div>
+                            </div>
+                            <div class="material-actions">
+                                <a href="quiz.html" class="btn btn-primary btn-sm">
+                                    <i class="bi bi-play-fill" aria-hidden="true"></i>
+                                    Jogar Agora
+                                </a>
+                            </div>
+                        </article>
+
+                        <article class="material-card">
+                            <div class="material-icon activity-icon">
+                                <i class="bi bi-puzzle" aria-hidden="true"></i>
+                            </div>
+                            <div class="material-content">
+                                <h4>Atividades para Sala de Aula</h4>
+                                <p class="material-description">Conjunto de atividades práticas e dinâmicas para educadores trabalharem o tema água em sala de aula.</p>
+                                <div class="material-meta">
+                                    <span class="material-type">PDF</span>
+                                    <span class="material-pages">16 páginas</span>
+                                    <span class="material-level">Educativo</span>
+                                </div>
+                            </div>
+                            <div class="material-actions">
+                                <button class="btn btn-outline btn-sm" onclick="viewMaterial('atividades-sala')">
+                                    <i class="bi bi-eye" aria-hidden="true"></i>
+                                    Visualizar
+                                </button>
+                                <button class="btn btn-primary btn-sm" onclick="downloadMaterial('atividades-sala')">
+                                    <i class="bi bi-download" aria-hidden="true"></i>
+                                    Download
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Educational Resources Info -->
+        <section class="resources-info" aria-labelledby="resources-info-title">
+            <div class="container">
+                <h2 id="resources-info-title" class="section-title">Como Usar os Materiais</h2>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="bi bi-mortarboard-fill" aria-hidden="true"></i>
+                        </div>
+                        <h3>Para Educadores</h3>
+                        <p>Utilize nossos materiais em suas aulas para abordar temas de sustentabilidade e recursos hídricos de forma didática e envolvente.</p>
+                        <ul>
+                            <li>Planos de aula prontos</li>
+                            <li>Atividades práticas</li>
+                            <li>Recursos multimídia</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="bi bi-people-fill" aria-hidden="true"></i>
+                        </div>
+                        <h3>Para Estudantes</h3>
+                        <p>Explore os conteúdos de forma autônoma e interativa, testando seus conhecimentos através do quiz educativo.</p>
+                        <ul>
+                            <li>Conteúdo progressivo</li>
+                            <li>Quiz interativo</li>
+                            <li>Materiais visuais</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="bi bi-house-heart-fill" aria-hidden="true"></i>
+                        </div>
+                        <h3>Para Comunidades</h3>
+                        <p>Materiais desenvolvidos especialmente para ações comunitárias e conscientização sobre práticas sustentáveis.</p>
+                        <ul>
+                            <li>Linguagem acessível</li>
+                            <li>Dicas práticas</li>
+                            <li>Tecnologias sociais</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta" aria-labelledby="cta-title">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 id="cta-title">Teste seus conhecimentos!</h2>
+                    <p>Após explorar nossos materiais, que tal testar o que aprendeu? Jogue nosso quiz educativo e descubra quanto você sabe sobre recursos hídricos!</p>
+                    <div class="cta-actions">
+                        <a href="quiz.html" class="btn btn-primary">
+                            <i class="bi bi-controller" aria-hidden="true"></i>
+                            Jogar Quiz
+                        </a>
+                        <a href="contact.html" class="btn btn-outline">Sugerir Material</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Material Viewer Modal -->
+    <div class="modal hidden" id="materialModal" role="dialog" aria-labelledby="materialModalTitle">
+        <div class="modal-overlay" id="materialModalOverlay"></div>
+        <div class="modal-content modal-large">
+            <div class="modal-header">
+                <h2 id="materialModalTitle">Visualizar Material</h2>
+                <button class="modal-close" id="closeMaterialModal" aria-label="Fechar modal">
+                    <i class="bi bi-x-lg" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="modal-body" id="materialModalBody">
+                <!-- Material content will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Guardiãs das Águas</h3>
+                    <p>Projeto de educação ambiental focado em saneamento básico e recursos hídricos, promovendo o protagonismo feminino na ciência.</p>
+                    <div class="social-links">
+                        <a href="https://www.youtube.com/watch?v=YAmCkvNIiYg" target="_blank" rel="noopener noreferrer" aria-label="Canal no YouTube">
+                            <i class="bi bi-youtube" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://instagram.com/Guardias.agua" target="_blank" rel="noopener noreferrer" aria-label="Perfil no Instagram">
+                            <i class="bi bi-instagram" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <nav aria-label="Links do rodapé">
+                        <ul>
+                            <li><a href="index.html">Início</a></li>
+                            <li><a href="about.html">Sobre o Projeto</a></li>
+                            <li><a href="projects.html">Projetos</a></li>
+                            <li><a href="quiz.html">Quiz Educativo</a></li>
+                            <li><a href="contact.html">Contato</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Instituição</h4>
+                    <p>Universidade Federal de Uberlândia</p>
+                    <p>SENAI Uberlândia CFP Dr. Celso Charuri</p>
+                    <p>Minas Gerais - Brasil</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Guardiãs das Águas. Todos os direitos reservados.</p>
+                <p>Desenvolvido com 💜 para a educação ambiental</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Materials filtering functionality
+        const categoryButtons = document.querySelectorAll('.category-btn');
+        const materialCategories = document.querySelectorAll('.materials-category');
+
+        categoryButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const category = button.getAttribute('data-category');
+                
+                // Update active button
+                categoryButtons.forEach(btn => {
+                    btn.classList.remove('active');
+                    btn.setAttribute('aria-pressed', 'false');
+                });
+                button.classList.add('active');
+                button.setAttribute('aria-pressed', 'true');
+                
+                // Filter categories
+                materialCategories.forEach(section => {
+                    const sectionCategory = section.getAttribute('data-category');
+                    if (category === 'todos' || category === sectionCategory) {
+                        section.style.display = 'block';
+                    } else {
+                        section.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Material interaction functions
+        function viewMaterial(materialId) {
+            const modal = document.getElementById('materialModal');
+            const modalTitle = document.getElementById('materialModalTitle');
+            const modalBody = document.getElementById('materialModalBody');
+            
+            modalTitle.textContent = 'Visualizar Material';
+            modalBody.innerHTML = `
+                <div class="material-viewer">
+                    <div class="viewer-placeholder">
+                        <i class="bi bi-file-earmark-text" style="font-size: 3rem; color: var(--color-primary);"></i>
+                        <h3>Material não disponível para visualização online</h3>
+                        <p>Este material está disponível para download. Clique no botão de download para acessar o conteúdo completo.</p>
+                        <button class="btn btn-primary" onclick="downloadMaterial('${materialId}')">
+                            <i class="bi bi-download"></i>
+                            Fazer Download
+                        </button>
+                    </div>
+                </div>
+            `;
+            
+            modal.classList.remove('hidden');
+        }
+
+        function downloadMaterial(materialId) {
+            // Simulate download process
+            alert(`Download iniciado para: ${materialId}\n\nEm uma implementação real, este seria o link direto para o arquivo.`);
+        }
+
+        function playVideo(videoId) {
+            // Simulate video player
+            alert(`Reproduzindo vídeo: ${videoId}\n\nEm uma implementação real, seria aberto um player de vídeo.`);
+        }
+
+        function viewInfographic(infographicId) {
+            viewMaterial(infographicId);
+        }
+
+        // Close modal functionality
+        document.getElementById('closeMaterialModal').addEventListener('click', () => {
+            document.getElementById('materialModal').classList.add('hidden');
+        });
+
+        document.getElementById('materialModalOverlay').addEventListener('click', () => {
+            document.getElementById('materialModal').classList.add('hidden');
+        });
+    </script>
+</body>
+</html>
