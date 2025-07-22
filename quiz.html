@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Educativo - Guardiãs das Águas</title>
     <meta name="description" content="Teste seus conhecimentos sobre saneamento básico e recursos hídricos no quiz educativo do projeto Guardiãs das Águas.">
+    
+    <!-- Links para os arquivos CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/quiz.css">
+    
+    <!-- Fontes e Ícones -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -18,6 +22,7 @@
         <nav class="navbar" role="navigation" aria-label="Menu principal">
             <div class="nav-container">
                 <div class="nav-brand">
+                    <!-- Certifique-se de que o caminho para o logo esteja correto -->
                     <img src="assets/logo.svg" alt="Logo Guardiãs das Águas" class="logo">
                     <h1 class="brand-name">Guardiãs das Águas</h1>
                 </div>
@@ -281,6 +286,9 @@
                 </div>
             </div>
         </div>
+
+        <!-- Elemento para leitores de tela (adicionado para acessibilidade) -->
+        <div id="screenReaderAnnouncer" aria-live="polite" class="visually-hidden"></div>
     </main>
 
     <!-- Footer -->
@@ -328,8 +336,8 @@
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
-    <script src="js/questions.js"></script>
-    <script src="js/quiz.js"></script>
+    <!-- Carrega o script principal como um módulo -->
+    <!-- Removi os scripts questions.js e quiz.js pois eles serão importados via main.js -->
+    <script src="js/main.js" type="module"></script>
 </body>
 </html>
